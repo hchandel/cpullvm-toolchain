@@ -220,10 +220,9 @@
             "libraries_supported": "picolibc"
         },
         {
-            "variant": "riscv32ima_zve64x_zvl128b_ilp32",
-            "json": "riscv32ima_zve64x_zvl128b_ilp32.json",
-            "flags": "--target=riscv32-unknown-unknown-elf -march=rv32ima_zawrs_zacas_zabha_zba_zbb_zbs_zca_zcb_zilsd_zclsd_zdinx_zhinx_zfinx_xqci_xqccmp_xqccmt0p1_zve64x_zvl128b -menable-experimental-extensions -mabi=ilp32 -fPIC",
-            "libraries_supported": "picolibc"
+            "variant": "riscv32ima_zinx_zve64x_zvl128b_xqci_ilp32",
+            "json": "riscv32ima_zinx_zve64x_zvl128b_xqci_ilp32.json",
+            "flags": "--target=riscv32-unknown-unknown-elf -march=rv32ima_zawrs_zacas_zabha_zba_zbb_zbs_zca_zcb_zilsd_zclsd_zdinx_zhinx_zfinx_xqci_xqccmp_zve64x_zvl128b -mabi=ilp32 -fcf-protection=none"
         },
         {
             "variant": "riscv32im_xqci_ilp32_nothreads_nopic",

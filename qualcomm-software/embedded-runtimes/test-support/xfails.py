@@ -192,7 +192,8 @@ def main():
                 "riscv64gc_lp64d_nopic",
                 "riscv64gc_zba_zbb_lp64d_nopic",
                 "riscv64gc_lp64_nopic",
-                "riscv64gc_zba_zbb_lp64_nopic"
+                "riscv64gc_zba_zbb_lp64_nopic",
+                "riscv32ima_zinx_zve64x_zvl128b_xqci_ilp32"
             ],
             description="Disable the tests for now while the issue is being fixed upstream (https://github.com/picolibc/picolibc/pull/1072).",
         ),
@@ -213,8 +214,7 @@ def main():
                 "riscv32imafc_ilp32f",
                 "riscv32imafc_zba_zbb_ilp32f",
                 "riscv32imafc_zcb_zcmp_zba_zbb_ilp32f",
-                "riscv32imaf_zve32f_zvfh_zba_zbb_ilp32f_nothreads",
-                "riscv32ima_zve64x_zvl128b_ilp32"
+                "riscv32imaf_zve32f_zvfh_zba_zbb_ilp32f_nothreads"
             ],
             description="Disable the tests for now while the issue is being fixed upstream (https://github.com/picolibc/picolibc/pull/1072).",
         ),
