@@ -164,6 +164,7 @@ def main():
             variants=[
                 "riscv32ima_zinx_xqci_ilp32_nopic",
                 "riscv32ima_zinx_xqci_ilp32_exn_rtti_nopic",
+                "riscv32ima_zinx_zve64x_zvl128b_xqci_ilp32"
             ],
             description="Possible QEMU zhinx bug in fneg.h/fsgnjn.h (not "
                 "compiler-rt/clang/picolibc):\n"

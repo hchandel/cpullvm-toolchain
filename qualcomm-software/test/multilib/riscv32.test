@@ -71,7 +71,7 @@
 # CHECK-IMAF-ZVE32F-ZVFH-ILP32F-PIC: riscv32-unknown-elf/riscv32imaf_zve32f_zvfh_zba_zbb_ilp32f_nothreads{{$}}
 # CHECK-IMAF-ZVE32F-ZVFH-ILP32F-PIC-EMPTY:
 
-# RUN: %clang_with_libc_cfg -print-multi-directory --target=riscv32-unknown-elf -march=rv32ima_zawrs_zacas_zabha_zba_zbb_zbs_zca_zcb_zilsd_zclsd_zdinx_zhinx_zfinx_xqci_xqccmp_zve64x_zvl128b -mabi=ilp32 -fcf-protection=none 2>&1 | FileCheck %s --check-prefix=CHECK-IMA-ZINX-ZVE64X-ZVL128B-XQCI-ILP32
+# RUN: %clang_with_libc_cfg -print-multi-directory --target=riscv32-unknown-elf -march=rv32ima_zawrs_zacas_zabha_zba_zbb_zbs_zca_zcb_zilsd_zclsd_zdinx_zhinx_zfinx_xqci_xqccmp_xqccmt0p1_zve64x_zvl128b -menable-experimental-extensions -mabi=ilp32 -fcf-protection=none 2>&1 | FileCheck %s --check-prefix=CHECK-IMA-ZINX-ZVE64X-ZVL128B-XQCI-ILP32
 # CHECK-IMA-ZINX-ZVE64X-ZVL128B-XQCI-ILP32: riscv32-unknown-elf/riscv32ima_zinx_zve64x_zvl128b_xqci_ilp32{{$}}
 # CHECK-IMA-ZINX-ZVE64X-ZVL128B-XQCI-ILP32-EMPTY:
 
